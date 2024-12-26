@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-[#0A0A0A]">
+    <!-- Preloader start-->
+    <div id="preloader" class="fixed inset-0  flex justify-center items-center z-50 ">
+        <div class="matrix ">
+        </div>
+        <img src="./assets/img/logo.png" alt="Loading..." class="w-16 h-16 ">
+    </div>
+    <!-- Preloader end -->
+    <!-- navbar start -->
+    <header class="fixed top-0 left-0 w-full shadow-md z-50 backdrop-blur-sm bg-transparent">
+        <nav class="flex items-center justify-between px-6 py-6 md:px-12 lg:px-24">
+            <!-- Logo -->
+            <div class="flex items-center animate-rotate">
+                <img src="./assets/img/logo.png" alt="Logo">
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menuToggle" class="text-gray-700 hover:text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 7.5h16.5M3.75 12h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Buttons -->
+            <div id="menu" class="hidden md:flex md:items-center md:space-x-4">
+                <button class="px-4 py-2  text-white ">
+                    Menu
+                </button>
+                <button
+                    class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
+                    Connect Wallet
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Dropdown -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 py-4 bg-white shadow-md">
+            <button class="px-4 py-2  text-white ">
+                Menu
+            </button>
+            <button
+                class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
+                Connect Wallet
+            </button>
+        </div>
+    </header>
+    <!-- Navbar end  -->
+    <!-- hero section start -->
+    <section class="relative w-full min-h-screen lg:mt-0 md:mt-20 mt-20 flex items-center justify-start" id="section1">
+
+        <!-- Particle container -->
+        <div id="particles-js" class="absolute left-0 w-full h-52 sm:h-64 md:h-72 lg:h-80 top-1/2 transform -translate-y-1/2 ">
+        </div>
+        
+        <div class="absolute sm:bottom-0  md:bottom-0 lg:bottom-20 flex flex-wrap w-full z-10 lg:p-5 md:p-0 sm::p-0 ">
+            <!-- First Div -->
+            <div class="w-full lg:w-3/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start  justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm  hover:backdrop-blur-sm text-center lg:text-left">
+                <p class="text-[#525252] text-lg md:text-2xl uppercase">Preserve and empowering</p>
+                <h1 class="text-white text-4xl md:text-6xl lg:text-8xl font-extrabold leading-snug uppercase">
+                    Human wisdom <br>
+                    <span class="text-[#525252]">in the AI era</span>
+                </h1>
+            </div>
+    
+            <!-- Second Div -->
+            <div class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center  lg:items-start justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+                <p class="text-[#525252] text-base md:text-lg">Free gas to mint your Twin NFT for AI agents.</p>
+                <h1 class="text-white text-4xl md:text-6xl lg:text-8xl font-extrabold leading-snug uppercase">
+                    16
+                </h1>
+                <button class="px-4 py-2 mt-2 border lg:w-full md:w-auto sm:w-auto border-[#373737] text-black bg-white rounded-lg hover:bg-transparent hover:text-white hover:border-white transition duration-300">
+                    Free Mint
+                </button>
+            </div>
+    
+            <!-- Third Div -->
+            <div class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start justify-between p-2 md:p-4 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+                <!-- Row for Images -->
+                <div class="flex justify-center lg:justify-end space-x-2 md:space-x-4 w-full">
+                    <img src="./assets/img/twitter.png" alt="Icon 1" class="w-auto h-auto">
+                    <img src="./assets/img/open sea.png" alt="Icon 2" class="w-auto h-auto">
+                    <img src="./assets/img/wrapcast.png" alt="Icon 3" class="w-auto h-auto">
+                </div>
+    
+                <!-- Bottom Content -->
+                <div class="flex flex-col items-center md:items-center lg:items-start">
+                    <h1 class="text-white text-sm md:text-lg font-semibold">Track on us</h1>
+                    <p class="text-[#525252] text-sm md:text-lg">Twitter, OpenSea, and WrapCast for the latest updates!</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Left and right divs -->
+        <div class="absolute left-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-r from-[#0A0A0A] to-transparent backdrop-blur-sm"></div>
+        <div class="absolute right-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-l from-[#0A0A0A] to-transparent backdrop-blur-sm"></div>
+        <div class="absolute bottom-0 flex w-full items-center ">
+            <div class="hidden lg:flex absolute bottom-10 w-full items-center">
+                <!-- Div 1 -->
+                <div class="flex-grow h-px border-t border-[#525252]"></div>
+        
+                <!-- Div 2 -->
+                <div class="p-4">
+                    <p class="text-[#525252]">Scroll to explore</p>
+                </div> 
+            </div> 
+           
+       
+    </section>
+    
+    <!-- hero section end -->
+    <!-- Preloader script start -->
+    <script>
+        // window.addEventListener("load", function () {
+        //     const preloader = document.getElementById("preloader");
+        //     if (preloader) {
+        //         preloader.style.opacity = "0";
+        //         setTimeout(() => preloader.style.display = "none", 5000); // Smooth hide
+        //     }
+        // });
+    </script>
+    <script>
+        window.addEventListener("load", function () {
+            const preloader = document.getElementById("preloader");
+            if (preloader) {
+                setTimeout(() => {
+                    preloader.style.opacity = "0";
+                    setTimeout(() => preloader.style.display = "none", 500);
+                }, 10000);
+            }
+        });
+    </script>
+    <!-- Preloader script end -->
+    <!-- Navbar script start -->
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.getElementById('menu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+    <!-- navbar script end -->
+    <!-- smooth scrol js start -->
+    <script>
+        let scrollTimeout = null;
+        window.addEventListener('wheel', function (event) {
+            if (scrollTimeout) {
+                clearTimeout(scrollTimeout);
+            }
+            scrollTimeout = setTimeout(() => {
+                const sections = document.querySelectorAll('section');
+                const currentScroll = window.scrollY;
+                if (event.deltaY > 0) {
+                    for (let i = 0; i < sections.length; i++) {
+                        if (sections[i].offsetTop > currentScroll) {
+                            window.scrollTo({
+                                top: sections[i].offsetTop,
+                                behavior: 'smooth'
+                            });
+                            break;
+                        }
+                    }
+                } else {
+                    for (let i = sections.length - 1; i >= 0; i--) {
+                        if (sections[i].offsetTop < currentScroll) {
+                            window.scrollTo({
+                                top: sections[i].offsetTop,
+                                behavior: 'smooth'
+                            });
+                            break;
+                        }
+                    }
+                }
+            }, 150);
+        });
+    </script>
+    <!-- smooth scroll js end -->
+    <!-- Matrix animation js start -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const matrixContainer = document.querySelector('.matrix');
+            const columns = Math.floor(window.innerWidth / 20);
+            const rows = Math.floor(window.innerHeight / 20);
+            for (let i = 0; i < columns; i++) {
+                for (let j = 0; j < rows; j++) {
+                    const span = document.createElement('span');
+                    span.style.left = `${i * 20}px`;
+                    span.style.top = `${j * 20}px`;
+                    span.style.animationDelay = `${Math.random() * 5}s`;
+                    span.textContent = generateRandomCharacter();
+                    matrixContainer.appendChild(span);
+                }
+            }
+            function generateRandomCharacter() {
+                const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%&*';
+                return characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+        });
+
+    </script>
+    <!-- Matrix animation js end -->
+    <!-- partical animation start -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        window.onload = function () {
+            adjustParticlesHeight();
+            particlesJS("particles-js", {
+                particles: {
+                    number: {
+                        value: 400,
+                        density: {
+                            enable: true,
+                            value_area: 1000 
+                        }
+                    },
+                    color: {
+                        value: "#525252" 
+                    },
+                    shape: {
+                        type: "circle",
+                        stroke: {
+                            width: 0,
+                            color: "#000000"
+                        },
+                    },
+                    opacity: {
+                        value: 0.9,
+                        random: false,
+                        anim: {
+                            enable: false,
+                            speed: 1,
+                            opacity_min: 0.1,
+                            sync: false
+                        }
+                    },
+                    size: {
+                        random: false,
+                        value: 5
+                    },
+                    line_linked: {
+                        enable: true,
+                        distance: 150, 
+                        color: "#525252", 
+                        opacity: 0.5, 
+                        width: 0.5
+                    },
+                    move: {
+                        enable: true,
+                        speed: 1, 
+                        direction: "left",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false,
+                        attract: {
+                            enable: false,
+                            rotateX: 600,
+                            rotateY: 1200
+                        }
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: {
+                            enable: false 
+                        },
+                        onclick: {
+                            enable: false 
+                        },
+                        resize: true
+                    },
+                    modes: {
+                        push: {
+                            particles_nb: 4
+                        }
+                    }
+                },
+                retina_detect: true
+            });
+        };
+
+        function adjustParticlesHeight() {
+            // const section = document.getElementById('section1');
+            // const particlesContainer = document.getElementById('particles-js');
+            // const sectionHeight = section.offsetHeight;
+            // particlesContainer.style.height = `${sectionHeight * 0.8}px`; 
+            const particlesContainer = document.getElementById('particles-js');
+            particlesContainer.style.height = '400px';
+        }
+
+        window.onresize = adjustParticlesHeight;
+    </script>
+    <!-- partical animation end  -->
+    <!-- Include tsParticles CDN in the head -->
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.min.js"></script>
+</body>
+
+</html>

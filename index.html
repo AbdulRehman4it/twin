@@ -14,126 +14,131 @@
 
 <body class="bg-[#0A0A0A]">
     <!-- Preloader start-->
-    <!-- <div id="preloader" class="fixed inset-0  flex justify-center items-center z-50 ">
+    <div id="preloader" class="fixed inset-0  flex justify-center items-center z-50 ">
         <div class="matrix ">
         </div>
-        <img src="./assets/img/logo.png" alt="Loading..." class="w-16 h-16 ">
-    </div> -->
+        <img src="./assets/img/logo.svg" alt="Loading..." class="w-16 h-16 ">
+    </div>
     <!-- Preloader end -->
-    <!-- navbar start -->
-    <header class="fixed top-0 left-0 w-full shadow-md z-50 backdrop-blur-sm bg-transparent">
-        <nav class="flex items-center justify-between px-6 py-6 md:px-12 lg:px-24">
-            <!-- Logo -->
-            <div class="flex items-center animate-rotate">
-                <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
-            </div>
 
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menuToggle" class="text-white hover:text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                        stroke="currentColor" class="w-6 h-6">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M3.75 7.5h16.5M3.75 12h16.5m-16.5 4.5h16.5" />
-                    </svg>
-                </button>
-            </div>
+    <!-- Navbar Start -->
+<header class="w-full fixed top-0 left-0 z-50 backdrop-blur-sm bg-transparent">
+    <nav class="flex items-center justify-between px-4 py-4 md:px-8 lg:px-16">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <img src="./assets/img/logo.svg" alt="Logo" class="w-12 h-12 md:w-16 md:h-16">
+        </div>
 
-            <!-- Buttons -->
-            <div id="menu" class="hidden md:flex md:items-center md:space-x-4">
-                <button class=" relative  text-white hover:text-white before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-0.5 before:bg-white hover:before:w-full before:transition-all before:duration-300 before:ease-in-out">
-                    Menu
-                </button>
-                <button
-                    class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
-                    Connect Wallet
-                </button>
-            </div>
-        </nav>
-        <!-- Mobile Dropdown -->
-        <div id="mobileMenu"
-            class="hidden md:hidden px-6 py-4  bg-gradient-to-r from-[#0A0A0A] to-transparent backdrop-blur-sm shadow-md">
-            <button class="px-4 py-2  text-white ">
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menuToggle" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 7.5h16.5M3.75 12h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Desktop Menu -->
+        <div id="menu" class="hidden md:flex items-center space-x-6">
+            <button class="relative text-white hover:text-white before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-0.5 before:bg-white hover:before:w-full before:transition-all before:duration-300 before:ease-in-out px-4 py-2 text-lg" onclick="toggleDropdown()">
                 Menu
             </button>
-            <button
-                class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
+
+            <!-- Dropdown Menu -->
+            <div id="dropdownMenu" class="hidden bg-gradient-to-r from-black to-transparent backdrop-blur-sm absolute top-16 mt-2 w-48  text-white border border-gray-700 rounded-lg shadow-lg">
+                <a href="#" class="block px-4 py-2 hover:bg-white hover:text-black">TASKS</a>
+                <a href="#" class="block px-4 py-2 hover:bg-white hover:text-black">WHITEPAPER</a>
+                <a href="#" class="block px-4 py-2 hover:bg-white hover:text-black">MY TWIN</a>
+            
+            </div>
+
+            <button class="px-4 py-2 border border-gray-700 text-white bg-transparent rounded-lg hover:bg-white hover:text-black transition">
                 Connect Wallet
             </button>
         </div>
-    </header>
-    <!-- Navbar end  -->
-    <!-- hero section start -->
-    <section class="relative w-full min-h-screen 2xl:mt-0  md:mt-48 mt-32 flex items-center justify-start">
-        <!-- Background Video -->
-        <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
-            <source src="./assets/img/v2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    </nav>
 
-        <!-- Overlay for content and styling -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-        <div class="absolute sm:bottom-0  md:bottom-0 lg:bottom-20 flex flex-wrap w-full z-10 lg:p-5 md:p-0 sm::p-0 ">
-            <!-- First Div -->
-            <div
-                class="w-full lg:w-3/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start  justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm  hover:backdrop-blur-sm text-center lg:text-left">
-                <p class=" text-[#525252] text-lg md:text-2xl uppercase ">Preserve and empowering</p>
-                <h1 class="tbold text-white text-4xl md:text-6xl lg:text-7xl 2xl:text-[116px] leading-snug uppercase">
-                    Human wisdom <br>
-                    <span class="tlight text-[#525252]">in the AI era</span>
-                </h1>
-            </div>
-            <!-- Second Div -->
-            <div
-                class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center  lg:items-start justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
-                <p class=" text-[#525252] text-base md:text-lg">Free gas to mint your Twin NFT for AI agents.</p>
-                <h1 class="tsemibold text-white text-4xl md:text-6xl lg:text-8xl leading-snug uppercase">
-                    16
-                </h1>
-                <button
-                    class="px-4 py-2 mt-2 border lg:w-full md:w-auto sm:w-auto border-[#373737] text-black bg-white rounded-lg hover:bg-transparent hover:text-white hover:border-white transition duration-300">
-                    Free Mint
-                </button>
-            </div>
-            <!-- Third Div -->
-            <div
-                class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start justify-between p-2 md:p-4 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
-                <!-- Row for Images -->
-                <div class="flex justify-center lg:justify-end space-x-2 md:space-x-4 w-full">
-                    <img src="./assets/img/twitter.png" alt="Icon 1" class="w-auto h-auto">
-                    <img src="./assets/img/open sea.png" alt="Icon 2" class="w-auto h-auto">
-                    <img src="./assets/img/wrapcast.png" alt="Icon 3" class="w-auto h-auto">
-                </div>
-                <!-- Bottom Content -->
-                <div class="flex flex-col items-center md:items-center lg:items-start">
-                    <h1 class="text-white text-sm md:text-lg tsemibold">Track on us</h1>
-                    <p class="text-[#525252] text-sm md:text-lg">Twitter, OpenSea, and WrapCast for the latest updates!
-                    </p>
-                </div>
-            </div>
-        </div>
-        <!-- Left and right divs -->
-        <!-- <div
-            class="absolute left-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-r from-[#0A0A0A] to-transparent backdrop-blur-sm">
-        </div>
-        <div
-            class="absolute right-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-l from-[#0A0A0A] to-transparent backdrop-blur-sm">
-        </div> -->
-        <div class="absolute bottom-0 flex w-full items-center ">
-            <div class="hidden lg:flex absolute bottom-5 w-full items-center">
-                <!-- Div 1 -->
-                <div class="flex-grow h-px border-t border-[#525252]"></div>
-                <!-- Div 2 -->
-                <div class="p-4">
-                    <p class="text-[#525252]">Scroll to explore</p>
-                </div>
-            </div>
-    </section>
-    <!-- hero section end -->
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden px-4 py-4 bg-gradient-to-r from-black to-transparent backdrop-blur-sm">
+      <a href="#" class="block px-4 py-2 text-white">TASKS</a>
+      <a href="#" class="block px-4 py-2  text-white">WHITEPAPER</a>
+      <a href="#" class="block px-4 py-2  text-white">MY TWIN</a>
+      <a href="#" class="block px-4 py-2  text-white">CONNECT WALLET</a>
+    </div>
+</header>
+<!-- Navbar End -->
+
+<!-- Hero Section Start -->
+<section class=" w-full min-h-screen flex items-center justify-start">
+    <!-- Background Video -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="./assets/img/v2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="absolute sm:bottom-0  md:bottom-0 lg:bottom-20 flex flex-wrap w-full z-10 lg:p-5 md:p-0 sm:p-0 ">
+      <!-- First Div -->
+      <div
+          class="w-full lg:w-3/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start  justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm  hover:backdrop-blur-sm text-center lg:text-left">
+          <p class=" text-[#525252] text-lg md:text-2xl uppercase ">Preserve and empowering</p>
+          <h1 class="tbold text-white text-4xl md:text-6xl lg:text-7xl 2xl:text-[116px] leading-snug uppercase">
+              Human wisdom <br>
+              <span class="tlight text-[#525252]">in the AI era</span>
+          </h1>
+      </div>
+      <!-- Second Div -->
+      <div
+          class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center  lg:items-start justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+          <p class=" text-[#525252] text-base md:text-lg">Free gas to mint your Twin NFT for AI agents.</p>
+          <h1 class="tsemibold text-white text-4xl md:text-6xl lg:text-8xl leading-snug uppercase">
+              16
+          </h1>
+          <button
+              class="px-4 py-2 mt-2 border lg:w-full md:w-auto sm:w-auto border-[#373737] text-black bg-white rounded-lg hover:bg-transparent hover:text-white hover:border-white transition duration-300">
+              Free Mint
+          </button>
+      </div>
+      <!-- Third Div -->
+      <div
+          class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start justify-between p-2 md:p-4 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+          <!-- Row for Images -->
+          <div class="flex justify-center lg:justify-end space-x-2 md:space-x-4 w-full">
+              <img src="./assets/img/twitter.png" alt="Icon 1" class="w-auto h-auto">
+              <img src="./assets/img/open sea.png" alt="Icon 2" class="w-auto h-auto">
+              <img src="./assets/img/wrapcast.png" alt="Icon 3" class="w-auto h-auto">
+          </div>
+          <!-- Bottom Content -->
+          <div class="flex flex-col items-center md:items-center lg:items-start">
+              <h1 class="text-white text-sm md:text-lg tsemibold">Track on us</h1>
+              <p class="text-[#525252] text-sm md:text-lg">Twitter, OpenSea, and WrapCast for the latest updates!
+              </p>
+          </div>
+      </div>
+  </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hidden lg:flex absolute bottom-5 w-full items-center">
+      <!-- Div 1 -->
+      <div class="flex-grow h-px border-t border-[#525252]"></div>
+      <!-- Div 2 -->
+      <div class="p-4">
+          <p class="text-[#525252]">Scroll to explore</p>
+      </div>
+  </div>
+</section>
+<!-- Hero Section End -->
+
+
+
+
+
+
+
     <!-- About section start -->
-    <section class="w-full min-h-screen  border-b border-[#525252] md:px-12 px-5 py-8">
+    <section class="w-full border-b border-[#525252] px-4 md:px-8 lg:px-5 pb-8  xl:mt-20 lg:py-20">
+      
         <!-- Full-width Heading -->
-        <h1 class="tregular md:text-start text-center lg:text-[74px] lg:leading-[92px] text-4xl leading-[60px] text-white mb-8 uppercase ">Seal and Encrypt <span class="tlight text-[#525252]">
+        <h1 class="tregular md:text-start text-center lg:text-[74px] lg:leading-[92px] text-4xl leading-[60px] text-white mb-8 uppercase">Seal and Encrypt <span class="tlight text-[#525252]">
               Your Unique Traits into a Twin Soulbound </span> Token for Secure Digital Identity</h1>
 
         <!-- Parent Div -->
@@ -185,11 +190,12 @@
                     finding and completing tasks in agent marketplaces to earn continuous value.</p>
             </div>
         </div>
-
     </section>
     <!--About section end  -->
+
+
     <!-- Service section start -->
-    <section class="w-full min-h-screen  border-b border-[#525252] md:px-12 px-5 py-8">
+    <section class="w-full  border-b border-[#525252] md:px-12 px-5 lg:py-20 ">
         <!-- Full-width Heading -->
         <h1 class="tregular text-start md:text-[74px] md:leading-[92px] text-6xl leading-[70px] text-white mb-8">Begin with Tasks <span class="tlight text-[#525252] ">
             to Build Your Twin </span>  Matrix</h1>
@@ -200,7 +206,7 @@
                 class="w-full lg:w-1/2 bg-transparent p-6 overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 flex flex-col justify-end ">
                 <!-- Background Video -->
                 <video class="absolute top-0 left-0 w-full h-full  -z-10 object-cover" autoplay loop muted playsinline>
-                    <source src="./assets/img/v3.mp4" type="video/mp4">
+                    <source src="./assets/img/v4.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 
@@ -219,6 +225,7 @@
                     Start now
                 </button>
             </div>
+
             <div class="w-full lg:w-1/2 bg-transparent p-2 overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 flex flex-col justify-between space-y-5">
                 
                
@@ -227,7 +234,7 @@
                     <img src="./assets/img/s2.png" alt="Icon 1" class="">
                 </div>
                 <h2 class=" tregular text-2xl text-white font-semibold mb-2 p-2">Human Trust Network</h2>
-                <p class="text-gray-600 p-2">Join a verified network of authentic humans on blockchain. Each person you verify strengthens the network's trust layer, building a reliable foundation for human-AI collaboration.
+                <p class="text-gray-600 p-2">Join a verified network of authentic humans on blockchain.Each person you verify strengthens the network's trust layer, building a reliable foundation for human-AI collaboration.
 
                 </p>
                     <button
@@ -235,6 +242,7 @@
                     Coming soon
                 </button>
             </div>
+            
             <div class="w-full lg:w-1/2 bg-transparent p-2 overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 flex flex-col justify-between space-y-5">
                 
                
@@ -253,16 +261,16 @@
     </section>
     <!-- Service section end  -->
      <!-- faq section start -->
-     <section class="w-full bg-black md:px-12 px-5 py-8 text-white">
+     <section class="w-full bg-black md:px-12 px-5 lg:py-20 text-white ">
         <!-- Section Heading -->
         <h1 class="md:text-[56px] text-4xl tregular mb-8 text-start">
           <span class="text-[#525252]">STRATEGIC</span> PLAN
         </h1>
       
         <!-- FAQ Container -->
-        <div class="space-y-6">
+        <div class="">
           <!-- FAQ Item 1 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
               class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(0)"
@@ -279,7 +287,7 @@
           </div>
       
           <!-- FAQ Item 2 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
               class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(1)"
@@ -297,9 +305,9 @@
           </div>
       
           <!-- FAQ Item 3 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
-              class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
+              class="tregular text-[#525252] text-start text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(2)"
             >
               Ch3 Intelligence Assets Framework
@@ -314,7 +322,7 @@
             </div>
           </div>
           <!-- FAQ Item 4 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
               class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(2)"
@@ -331,7 +339,7 @@
             </div>
           </div>
           <!-- FAQ Item 5 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
               class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(2)"
@@ -348,9 +356,9 @@
             </div>
           </div>
           <!-- FAQ Item 6 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
-              class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
+              class="tregular text-[#525252] text-start text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(2)"
             >
               Ch6 Cross chain intelligence network
@@ -365,9 +373,9 @@
             </div>
           </div>
           <!-- FAQ Item 7 -->
-          <div class="flex lg:flex-row flex-col items-center border-b border-gray-700 py-4">
+          <div class="flex lg:flex-row flex-col items-start lg:items-center border-b border-gray-700 py-8">
             <button
-              class="tregular text-[#525252] text-2xl hover:text-white transition flex-shrink-0 mr-6"
+              class="tregular text-[#525252]  text-2xl hover:text-white transition flex-shrink-0 mr-6"
               onclick="showAnswer(2)"
             >
               Ch7 Universal human protocol
@@ -383,27 +391,34 @@
           </div>
         </div>
       </section>
+<!-- faq section end -->
+
+
+
+
+
+
 
       <!-- footer start -->
-      <footer class="bg-black text-white px-8 py-10 lg:px-20 lg:py-12">
-        <div class="container mx-auto flex flex-col lg:flex-row justify-between items-start space-y-10 lg:space-y-0">
+      <footer class="bg-black text-white px-8 py-10 xl:pr-20 lg:px-0 lg:py-12">
+        <div class=" flex flex-col-reverse lg:flex-row xl:justify-between items-start space-y-10 lg:space-y-0">
           <!-- Logo Section -->
-          <div class="w-full lg:w-1/4 text-center lg:text-left">
-            <div class="flex-col justify-center lg:justify-start  items-center space-x-2">
+          <div class="w-full xl:w-1/5 lg:w-[13%] text-center lg:text-left">
+            <div class="flex flex-col justify-center lg:justify-start items-center space-x-2 pt-6 lg:pt-0">
             <!-- Logo -->
-            <div class="flex items-center lg:ml-4 md:ml-0 sm:ml-0">
-                <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
+            <div class="flex items-center ml-3 ">
+                <img src="./assets/img/logo.svg" alt="Logo" class="w-16 h-16">
             </div>
             <span class="text-xl font-semibold">twin3.ai</span>
             </div>
           </div>
       
           <!-- Links Section -->
-          <div class="flex flex-wrap lg:flex-nowrap w-full lg:w-2/4 items-start lg:items-center lg:space-x-10">
+          <div class="flex flex-wrap lg:flex-nowrap w-full lg:w-2/4  lg:space-x-10">
             <!-- Social Media Links -->
             <div class="w-full md:w-1/3 text-center lg:text-left flex-row">
-              <h5 class="font-medium uppercase mb-3 text-sm lg:text-base">Social Media</h5>
-              <div class="flex justify-center lg:justify-start space-x-4">
+              <h5 class="font-medium uppercase text-sm lg:text-base">Social Media</h5>
+              <div class="flex justify-center lg:justify-start 2xl:space-x-4">
                 <img src="./assets/img/twitter.png" alt="Twitter" class="">
                 <img src="./assets/img/open sea.png" alt="OpenSea" class="">
                 <img src="./assets/img/wrapcast.png" alt="Wrapcast" class="">
@@ -411,7 +426,7 @@
             </div>
       
             <!-- Resource Links -->
-            <div class="w-full md:w-1/3 text-center lg:text-left 2xl:mb-2 ">
+            <div class="w-full md:w-1/3 text-center lg:text-left 2xl:mb-2 pt-4 md:pt-0 ">
               <h5 class="font-medium uppercase mb-3 text-sm lg:text-base">Resource</h5>
               <ul class="space-y-2">
                 <li><a href="#" class="text-[#525252] hover:text-white text-sm lg:text-base">Whitepaper</a></li>
@@ -420,7 +435,7 @@
             </div>
       
             <!-- Features Links -->
-            <div class="w-full md:w-1/3 text-center lg:text-left 2xl:mb-10 ">
+            <div class="w-full md:w-1/3 text-center lg:text-left 2xl:mb-10 pt-4 md:pt-0">
               <h5 class="font-medium uppercase mb-3 text-sm lg:text-base">Features</h5>
               <ul class="space-y-2">
                 <li><a href="#" class="text-[#525252] hover:text-white text-sm lg:text-base">My Twin</a></li>
@@ -450,10 +465,17 @@
           © 2025 Twin3.ai v1.0.0
         </div>
       </footer>
-      
-      
-      
       <!-- footer end -->
+
+
+<!-- Add this script to toggle dropdown -->
+<script>
+  function toggleDropdown() {
+    const menu = document.getElementById("dropdownMenu");
+    menu.classList.toggle("hidden");
+  }
+</script>
+
       <script>
         function showAnswer(index) {
           // Hide all answers
@@ -466,7 +488,7 @@
         }
       </script>
       
-      <!-- faq section end -->
+      
     <!-- Preloader script start -->
     <script>
         // window.addEventListener("load", function () {
@@ -484,11 +506,13 @@
                 setTimeout(() => {
                     preloader.style.opacity = "0";
                     setTimeout(() => preloader.style.display = "none", 500);
-                }, 5000);
+                }, 3000);
             }
         });
     </script>
-    <!-- Preloader script end -->
+       <!-- Preloader script end -->
+
+
     <!-- Navbar script start -->
     <script>
         const menuToggle = document.getElementById('menuToggle');
@@ -500,6 +524,8 @@
         });
     </script>
     <!-- navbar script end -->
+
+
     <!-- Matrix animation js start -->
     <script>
         document.addEventListener("DOMContentLoaded", () => {

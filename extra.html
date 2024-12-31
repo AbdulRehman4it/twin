@@ -60,6 +60,8 @@
             </div>
         </div>
 </section>
+
+
 <!-- hero section end -->
   <!-- partical animation start -->
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -156,3 +158,152 @@
   <!-- partical animation end  -->
   <!-- Include tsParticles CDN in the head -->
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@1.39.0/tsparticles.min.js"></script>
+
+
+
+
+  <header class=" left-0 w-full shadow-md z-50 backdrop-blur-sm bg-transparent">
+    <nav class="flex items-center justify-between px-6 py-6 md:px-12 lg:px-24">
+        <!-- Logo -->
+        <div class="flex items-center animate-rotate">
+            <img src="./assets/img/logo.png" alt="Logo" class="w-16 h-16">
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+            <button id="menuToggle" class="text-white hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 7.5h16.5M3.75 12h16.5m-16.5 4.5h16.5" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Buttons -->
+        <div id="menu" class="hidden md:flex md:items-center md:space-x-4">
+          <button
+          class="relative text-white hover:text-white before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-0 before:h-0.5 before:bg-white hover:before:w-full before:transition-all before:duration-300 before:ease-in-out px-4 py-2 text-lg"
+          onclick="toggleDropdown()"
+        >
+          Menu
+        </button>
+      
+        <!-- Dropdown Menu -->
+        <div
+          id="dropdownMenu"
+          class="absolute right-0 mt-2 w-1/5 bg-black text-white border-2 border-[#0A0A0A]-10% rounded-[30px] shadow-lg p-4 hidden"
+        >
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-white hover:text-black rounded-md transition-all duration-300"
+          >
+            TASKS
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-white hover:text-black rounded-md transition-all duration-300"
+          >
+            WHITEPAPER
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-white hover:text-black rounded-md transition-all duration-300"
+          >
+            MY TWIN
+          </a>
+          <a
+            href="#"
+            class="block px-4 py-2 hover:bg-white hover:text-black rounded-md transition-all duration-300"
+          >
+            CONNECT WALLET
+          </a>
+        </div>
+            <button
+                class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
+                Connect Wallet
+            </button>
+        </div>
+    </nav>
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu"
+        class="hidden md:hidden px-6 py-4  bg-gradient-to-r from-[#0A0A0A] to-transparent backdrop-blur-sm shadow-md">
+        <button class="px-4 py-2  text-white ">
+            Menu
+        </button>
+        <button
+            class="px-4 py-2 border border-[#373737] text-white bg-transparent rounded-lg hover:bg-white hover:text-black hover:border-black transition duration-300">
+            Connect Wallet
+        </button>
+    </div>
+</header>
+<!-- Navbar end  -->
+
+
+<!-- hero section start -->
+<section class="relative w-full min-h-screen 2xl:mt-0  flex items-center justify-start">
+    <!-- Background Video -->
+    <video class="absolute top-0 left-0 w-full h-full object-cover" autoplay loop muted playsinline>
+        <source src="./assets/img/v2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay for content and styling -->
+   
+    <div class="absolute sm:bottom-0  md:bottom-0 lg:bottom-20 flex flex-wrap w-full z-10 lg:p-5 md:p-0 sm:p-0 ">
+        <!-- First Div -->
+        <div
+            class="w-full lg:w-3/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start  justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm  hover:backdrop-blur-sm text-center lg:text-left">
+            <p class=" text-[#525252] text-lg md:text-2xl uppercase ">Preserve and empowering</p>
+            <h1 class="tbold text-white text-4xl md:text-6xl lg:text-7xl 2xl:text-[116px] leading-snug uppercase">
+                Human wisdom <br>
+                <span class="tlight text-[#525252]">in the AI era</span>
+            </h1>
+        </div>
+        <!-- Second Div -->
+        <div
+            class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center  lg:items-start justify-between p-5 lg:p-10 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+            <p class=" text-[#525252] text-base md:text-lg">Free gas to mint your Twin NFT for AI agents.</p>
+            <h1 class="tsemibold text-white text-4xl md:text-6xl lg:text-8xl leading-snug uppercase">
+                16
+            </h1>
+            <button
+                class="px-4 py-2 mt-2 border lg:w-full md:w-auto sm:w-auto border-[#373737] text-black bg-white rounded-lg hover:bg-transparent hover:text-white hover:border-white transition duration-300">
+                Free Mint
+            </button>
+        </div>
+        <!-- Third Div -->
+        <div
+            class="w-full lg:w-1/5 bg-transparent h-auto flex flex-col md:items-center lg:items-start justify-between p-2 md:p-4 relative overflow-hidden rounded-lg backdrop-blur-sm border border-white border-opacity-20 hover:backdrop-blur-sm hover:border-opacity-100 hover:shadow-lg hover:shadow-white transition-all duration-300 text-center lg:text-left">
+            <!-- Row for Images -->
+            <div class="flex justify-center lg:justify-end space-x-2 md:space-x-4 w-full">
+                <img src="./assets/img/twitter.png" alt="Icon 1" class="w-auto h-auto">
+                <img src="./assets/img/open sea.png" alt="Icon 2" class="w-auto h-auto">
+                <img src="./assets/img/wrapcast.png" alt="Icon 3" class="w-auto h-auto">
+            </div>
+            <!-- Bottom Content -->
+            <div class="flex flex-col items-center md:items-center lg:items-start">
+                <h1 class="text-white text-sm md:text-lg tsemibold">Track on us</h1>
+                <p class="text-[#525252] text-sm md:text-lg">Twitter, OpenSea, and WrapCast for the latest updates!
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- Left and right divs -->
+    <!-- <div
+        class="absolute left-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-r from-[#0A0A0A] to-transparent backdrop-blur-sm">
+    </div>
+    <div
+        class="absolute right-0 top-0 w-[10%] h-[calc(100vh-200px)] bg-gradient-to-l from-[#0A0A0A] to-transparent backdrop-blur-sm">
+    </div> -->
+    
+        <div class="hidden lg:flex absolute bottom-5 w-full items-center">
+            <!-- Div 1 -->
+            <div class="flex-grow h-px border-t border-[#525252]"></div>
+            <!-- Div 2 -->
+            <div class="p-4">
+                <p class="text-[#525252]">Scroll to explore</p>
+            </div>
+        </div>
+</section>
+<!-- hero section end -->
